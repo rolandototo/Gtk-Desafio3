@@ -12,4 +12,11 @@ Uso de la interfas Gtk para multiplataforma
 * Json como manejo de datos
 * POO
 * Sha256
+* Zip
+* Gmail
+
+### Login:
+* Usuario = admin
+* Contraseña = admin123
+
 
