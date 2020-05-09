@@ -9,3 +9,7 @@
 /home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/obj/x86/Debug/Gtk-Desafio3.pdb
 /home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/Newtonsoft.Json.dll
 /home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/Newtonsoft.Json.xml
+C:\Users\josia\Desktop\Gtk-Desafio3\Gtk-Desafio3\obj\x86\Debug\Gtk-Desafio3.csprojAssemblyReference.cache
+C:\Users\josia\Desktop\Gtk-Desafio3\Gtk-Desafio3\obj\x86\Debug\Gtk-Desafio3.csproj.CoreCompileInputs.cache
+C:\Users\josia\Desktop\Gtk-Desafio3\Gtk-Desafio3\obj\x86\Debug\Gtk-Desafio3.exe
+C:\Users\josia\Desktop\Gtk-Desafio3\Gtk-Desafio3\obj\x86\Debug\Gtk-Desafio3.pdb

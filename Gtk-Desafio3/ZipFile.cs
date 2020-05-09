@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO.Compression;
-using Ionic.Zip;
+
 
 namespace GtkDesafio3
 {
@@ -9,7 +9,12 @@ namespace GtkDesafio3
         Recursos rs = new Recursos();
         public void Zip()
         {
-           
+            string path = @"Archivos";
+            string pathzip = @"Archivos.zip";
+
+        //    ZipFile.CreateFromDirectory(path, pathzip);
+
+            // ZipFile.ExtractToDirectory(pathzip, path);
         }
     }
 }
