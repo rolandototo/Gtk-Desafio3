@@ -258,12 +258,18 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <placeholder />
+              <widget class="Gtk.HSeparator" id="hseparator5">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+              </packing>
             </child>
             <child>
               <widget class="Gtk.Label" id="label12">
                 <property name="MemberName" />
-                <property name="LabelProp" translatable="yes">label12</property>
+                <property name="LabelProp" translatable="yes">Datos de Trabajadores</property>
                 <property name="Justify">Center</property>
               </widget>
               <packing>
@@ -274,7 +280,13 @@
               </packing>
             </child>
             <child>
-              <placeholder />
+              <widget class="Gtk.HSeparator" id="hseparator4">
+                <property name="MemberName" />
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+              </packing>
             </child>
           </widget>
           <packing>
@@ -303,7 +315,7 @@
                     <child>
                       <widget class="Gtk.Label" id="label9">
                         <property name="MemberName" />
-                        <property name="LabelProp" translatable="yes">label9</property>
+                        <property name="LabelProp" translatable="yes">Codigo: </property>
                       </widget>
                       <packing>
                         <property name="Position">0</property>
@@ -339,7 +351,7 @@
                     <child>
                       <widget class="Gtk.Label" id="label10">
                         <property name="MemberName" />
-                        <property name="LabelProp" translatable="yes">label10</property>
+                        <property name="LabelProp" translatable="yes">Nombre del trabajdor: </property>
                       </widget>
                       <packing>
                         <property name="Position">0</property>
@@ -375,7 +387,7 @@
                     <child>
                       <widget class="Gtk.Label" id="label11">
                         <property name="MemberName" />
-                        <property name="LabelProp" translatable="yes">label11</property>
+                        <property name="LabelProp" translatable="yes">Horas trabajadas al mes: </property>
                       </widget>
                       <packing>
                         <property name="Position">0</property>

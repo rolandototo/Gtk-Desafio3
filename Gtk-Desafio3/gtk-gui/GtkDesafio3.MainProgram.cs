@@ -18,7 +18,11 @@ namespace GtkDesafio3
 
 		private global::Gtk.HBox hbox12;
 
+		private global::Gtk.HSeparator hseparator5;
+
 		private global::Gtk.Label label12;
+
+		private global::Gtk.HSeparator hseparator4;
 
 		private global::Gtk.HBox hbox8;
 
@@ -96,20 +100,32 @@ namespace GtkDesafio3
 			this.hbox12.Name = "hbox12";
 			this.hbox12.Spacing = 6;
 			// Container child hbox12.Gtk.Box+BoxChild
+			this.hseparator5 = new global::Gtk.HSeparator();
+			this.hseparator5.Name = "hseparator5";
+			this.hbox12.Add(this.hseparator5);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox12[this.hseparator5]));
+			w3.Position = 0;
+			// Container child hbox12.Gtk.Box+BoxChild
 			this.label12 = new global::Gtk.Label();
 			this.label12.Name = "label12";
-			this.label12.LabelProp = global::Mono.Unix.Catalog.GetString("label12");
+			this.label12.LabelProp = global::Mono.Unix.Catalog.GetString("Datos de Trabajadores");
 			this.label12.Justify = ((global::Gtk.Justification)(2));
 			this.hbox12.Add(this.label12);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox12[this.label12]));
-			w3.Position = 1;
-			w3.Expand = false;
-			w3.Fill = false;
-			this.vbox6.Add(this.hbox12);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox12]));
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox12[this.label12]));
 			w4.Position = 1;
 			w4.Expand = false;
 			w4.Fill = false;
+			// Container child hbox12.Gtk.Box+BoxChild
+			this.hseparator4 = new global::Gtk.HSeparator();
+			this.hseparator4.Name = "hseparator4";
+			this.hbox12.Add(this.hseparator4);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox12[this.hseparator4]));
+			w5.Position = 2;
+			this.vbox6.Add(this.hbox12);
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox12]));
+			w6.Position = 1;
+			w6.Expand = false;
+			w6.Fill = false;
 			// Container child vbox6.Gtk.Box+BoxChild
 			this.hbox8 = new global::Gtk.HBox();
 			this.hbox8.Name = "hbox8";
@@ -126,12 +142,12 @@ namespace GtkDesafio3
 			// Container child hbox9.Gtk.Box+BoxChild
 			this.label9 = new global::Gtk.Label();
 			this.label9.Name = "label9";
-			this.label9.LabelProp = global::Mono.Unix.Catalog.GetString("label9");
+			this.label9.LabelProp = global::Mono.Unix.Catalog.GetString("Codigo: ");
 			this.hbox9.Add(this.label9);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.label9]));
-			w5.Position = 0;
-			w5.Expand = false;
-			w5.Fill = false;
+			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.label9]));
+			w7.Position = 0;
+			w7.Expand = false;
+			w7.Fill = false;
 			// Container child hbox9.Gtk.Box+BoxChild
 			this.entry6 = new global::Gtk.Entry();
 			this.entry6.CanFocus = true;
@@ -139,13 +155,13 @@ namespace GtkDesafio3
 			this.entry6.IsEditable = true;
 			this.entry6.InvisibleChar = '•';
 			this.hbox9.Add(this.entry6);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entry6]));
-			w6.Position = 1;
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entry6]));
+			w8.Position = 1;
 			this.vbox10.Add(this.hbox9);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox9]));
-			w7.Position = 0;
-			w7.Expand = false;
-			w7.Fill = false;
+			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox9]));
+			w9.Position = 0;
+			w9.Expand = false;
+			w9.Fill = false;
 			// Container child vbox10.Gtk.Box+BoxChild
 			this.hbox10 = new global::Gtk.HBox();
 			this.hbox10.Name = "hbox10";
@@ -153,12 +169,12 @@ namespace GtkDesafio3
 			// Container child hbox10.Gtk.Box+BoxChild
 			this.label10 = new global::Gtk.Label();
 			this.label10.Name = "label10";
-			this.label10.LabelProp = global::Mono.Unix.Catalog.GetString("label10");
+			this.label10.LabelProp = global::Mono.Unix.Catalog.GetString("Nombre del trabajdor: ");
 			this.hbox10.Add(this.label10);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.label10]));
-			w8.Position = 0;
-			w8.Expand = false;
-			w8.Fill = false;
+			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.label10]));
+			w10.Position = 0;
+			w10.Expand = false;
+			w10.Fill = false;
 			// Container child hbox10.Gtk.Box+BoxChild
 			this.entry7 = new global::Gtk.Entry();
 			this.entry7.CanFocus = true;
@@ -166,13 +182,13 @@ namespace GtkDesafio3
 			this.entry7.IsEditable = true;
 			this.entry7.InvisibleChar = '•';
 			this.hbox10.Add(this.entry7);
-			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.entry7]));
-			w9.Position = 1;
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.entry7]));
+			w11.Position = 1;
 			this.vbox10.Add(this.hbox10);
-			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox10]));
-			w10.Position = 1;
-			w10.Expand = false;
-			w10.Fill = false;
+			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox10]));
+			w12.Position = 1;
+			w12.Expand = false;
+			w12.Fill = false;
 			// Container child vbox10.Gtk.Box+BoxChild
 			this.hbox11 = new global::Gtk.HBox();
 			this.hbox11.Name = "hbox11";
@@ -180,12 +196,12 @@ namespace GtkDesafio3
 			// Container child hbox11.Gtk.Box+BoxChild
 			this.label11 = new global::Gtk.Label();
 			this.label11.Name = "label11";
-			this.label11.LabelProp = global::Mono.Unix.Catalog.GetString("label11");
+			this.label11.LabelProp = global::Mono.Unix.Catalog.GetString("Horas trabajadas al mes: ");
 			this.hbox11.Add(this.label11);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.label11]));
-			w11.Position = 0;
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.label11]));
+			w13.Position = 0;
+			w13.Expand = false;
+			w13.Fill = false;
 			// Container child hbox11.Gtk.Box+BoxChild
 			this.entry8 = new global::Gtk.Entry();
 			this.entry8.CanFocus = true;
@@ -193,22 +209,22 @@ namespace GtkDesafio3
 			this.entry8.IsEditable = true;
 			this.entry8.InvisibleChar = '•';
 			this.hbox11.Add(this.entry8);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.entry8]));
-			w12.Position = 1;
-			this.vbox10.Add(this.hbox11);
-			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox11]));
-			w13.Position = 2;
-			w13.Expand = false;
-			w13.Fill = false;
-			this.hbox8.Add(this.vbox10);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vbox10]));
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.entry8]));
 			w14.Position = 1;
-			w14.Padding = ((uint)(84));
-			this.vbox6.Add(this.hbox8);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox8]));
+			this.vbox10.Add(this.hbox11);
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox11]));
 			w15.Position = 2;
 			w15.Expand = false;
 			w15.Fill = false;
+			this.hbox8.Add(this.vbox10);
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox8[this.vbox10]));
+			w16.Position = 1;
+			w16.Padding = ((uint)(84));
+			this.vbox6.Add(this.hbox8);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.hbox8]));
+			w17.Position = 2;
+			w17.Expand = false;
+			w17.Fill = false;
 			// Container child vbox6.Gtk.Box+BoxChild
 			this.vbox9 = new global::Gtk.VBox();
 			this.vbox9.Name = "vbox9";
@@ -224,17 +240,17 @@ namespace GtkDesafio3
 			this.button3.UseUnderline = true;
 			this.button3.Label = global::Mono.Unix.Catalog.GetString("Operar y guardar");
 			this.hbox7.Add(this.button3);
-			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.button3]));
-			w16.PackType = ((global::Gtk.PackType)(1));
-			w16.Position = 2;
-			w16.Expand = false;
-			w16.Fill = false;
-			w16.Padding = ((uint)(16));
+			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.hbox7[this.button3]));
+			w18.PackType = ((global::Gtk.PackType)(1));
+			w18.Position = 2;
+			w18.Expand = false;
+			w18.Fill = false;
+			w18.Padding = ((uint)(16));
 			this.vbox9.Add(this.hbox7);
-			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.hbox7]));
-			w17.Position = 0;
-			w17.Expand = false;
-			w17.Fill = false;
+			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.hbox7]));
+			w19.Position = 0;
+			w19.Expand = false;
+			w19.Fill = false;
 			// Container child vbox9.Gtk.Box+BoxChild
 			this.frame1 = new global::Gtk.Frame();
 			this.frame1.Name = "frame1";
@@ -261,11 +277,11 @@ namespace GtkDesafio3
 			this.GtkLabel2.UseMarkup = true;
 			this.frame1.LabelWidget = this.GtkLabel2;
 			this.vbox9.Add(this.frame1);
-			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.frame1]));
-			w21.Position = 1;
+			global::Gtk.Box.BoxChild w23 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.frame1]));
+			w23.Position = 1;
 			this.vbox6.Add(this.vbox9);
-			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.vbox9]));
-			w22.Position = 3;
+			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.vbox6[this.vbox9]));
+			w24.Position = 3;
 			this.Add(this.vbox6);
 			if ((this.Child != null))
 			{
