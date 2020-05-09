@@ -28,7 +28,7 @@ public partial class MainWindow : Gtk.Window
             error = lg.LoginInit(UsuarioIngreso.Text, PassIngreso.Text);
         if (ContSendEmail >3)
         {
-            //Sa.Send(); En testeo la funcion 
+            Sa.Send(); 
             MessageDialog em = new MessageDialog(this, DialogFlags.DestroyWithParent, MessageType.Warning, ButtonsType.Close, "Se a equibocado 3 veces se enviara un correo al administrador y se cerrara el programa");
             em.Run();
             em.Destroy();
