@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{31B67E25-E868-4781-A091-7016D04CD6E6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/MainWindow.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/LogIn.cs">
     <Files>
-      <File FileName="Gtk-Desafio3/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="Gtk-Desafio3/MainWindow.cs" Line="17" Column="1" />
       <File FileName="Gtk-Desafio3/Program.cs" Line="1" Column="1" />
+      <File FileName="Gtk-Desafio3/ZipFile.cs" Line="11" Column="1" />
+      <File FileName="Gtk-Desafio3/LogIn.cs" Line="11" Column="1" />
+      <File FileName="Gtk-Desafio3/Recursos.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Gtk-Desafio3" expanded="True">
             <Node name="Gtk-Desafio3" expanded="True">
-              <Node name="MainWindow.cs" selected="True" />
+              <Node name="LogIn.cs" selected="True" />
             </Node>
           </Node>
         </State>
