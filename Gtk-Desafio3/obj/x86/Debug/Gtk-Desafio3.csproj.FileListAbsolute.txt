@@ -9,6 +9,3 @@
 /home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/obj/x86/Debug/Gtk-Desafio3.pdb
 /home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/Newtonsoft.Json.dll
 /home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/Newtonsoft.Json.xml
-/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/libstetic.dll
-/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/libstetic.xml
-/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/libstetic.dll.config
