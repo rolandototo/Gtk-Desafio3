@@ -4,10 +4,14 @@ namespace GtkDesafio3
 {
     public partial class MainProgram : Gtk.Window
     {
-        public MainProgram() :
-                base(Gtk.WindowType.Toplevel)
+        public MainProgram() : base(Gtk.WindowType.Toplevel)
         {
             this.Build();
+        }
+        protected void OnDeleteEvent(object sender, DeleteEventArgs a)
+        {
+            Application.Quit();
+            a.RetVal = true;
         }
     }
 }

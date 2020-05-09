@@ -13,7 +13,7 @@ public partial class MainWindow : Gtk.Window
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
-        
+
     }
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
@@ -33,6 +33,7 @@ public partial class MainWindow : Gtk.Window
             em.Run();
             em.Destroy();
             Application.Quit();
+            
         }
         else if (error == true)
             {

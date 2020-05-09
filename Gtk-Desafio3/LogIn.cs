@@ -18,6 +18,7 @@ namespace GtkDesafio3
                     string ShaPass = GetSHA256(PassIn);
                     if (ShaPass == BusquedaLogs.Pass)
                     {
+
                         MainProgram Mp = new MainProgram();
                         Mp.Show();
                     }
