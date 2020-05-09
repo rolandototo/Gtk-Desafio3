@@ -8,21 +8,36 @@ namespace GtkDesafio3
         public void Send()
         {
 
-            MailMessage mail = new MailMessage();
-            SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+            string Emailorigen = "testcsharp001@gmail.com";
+            string Emaildestino = "testcsharp001@gmail.com";
+            string contraseña = "adminCsharp";
+            //YWRtaW5Dc2hhcnA=
+            string GetIP()
+            {
+                string strHostName = "";
+                strHostName = System.Net.Dns.GetHostName();
 
-            mail.From = new MailAddress("TestCsharp.90@gmail.com");
-            mail.To.Add("to_address");
-            mail.Subject = "Advertencia!";
-            mail.Body = "Intento de sospechoso de ingreso en el programa el dia " + DateTime.Today.ToString("d") + " a las " + DateTime.Now.ToString("hh:mm:ss") + " con la ip: " + GetIP();
+                IPHostEntry ipEntry = System.Net.Dns.GetHostEntry(strHostName);
 
-            SmtpServer.Port = 587;
-            SmtpServer.Credentials = new System.Net.NetworkCredential("username", "password");
-            SmtpServer.EnableSsl = true;
+                IPAddress[] addr = ipEntry.AddressList;
 
-            SmtpServer.Send(mail);
+                return addr[addr.Length - 1].ToString();
+
+            }
+            MailMessage mess = new MailMessage(Emailorigen, Emaildestino, "Se Ha Destectado Una Amenaza", "<p>Intento de sospechoso de ingreso en el programa el dia " + DateTime.Today.ToString("d") + " a las " + DateTime.Now.ToString("hh:mm:ss") + " con la ip: " + GetIP() + "<p>");
+
+            mess.IsBodyHtml = true;
+            SmtpClient client = new SmtpClient("smtp.gmail.com");
+            client.EnableSsl = true;
+            client.UseDefaultCredentials = false;
+            client.Host = "smtp.gmail.com";
+            client.Port = 587;
+            client.Credentials = new System.Net.NetworkCredential(Emailorigen, contraseña);
+
+            client.Send(mess);
+            client.Dispose();
 
         }
-        .
+        
     }
 }
