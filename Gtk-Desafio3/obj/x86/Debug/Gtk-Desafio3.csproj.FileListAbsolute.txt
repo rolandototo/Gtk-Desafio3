@@ -1,0 +1,9 @@
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/Gtk-Desafio3.exe
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/Gtk-Desafio3.pdb
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/DotNetZip.dll
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/DotNetZip.pdb
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/bin/Debug/DotNetZip.xml
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/obj/x86/Debug/Gtk-Desafio3.csprojAssemblyReference.cache
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/obj/x86/Debug/Gtk-Desafio3.csproj.CopyComplete
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/obj/x86/Debug/Gtk-Desafio3.exe
+/home/rolando/C#/Gtk-Desafio3/Gtk-Desafio3/obj/x86/Debug/Gtk-Desafio3.pdb

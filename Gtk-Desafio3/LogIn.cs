@@ -3,8 +3,6 @@ namespace GtkDesafio3
 {
     public class LogIn
     {
-        public LogIn()
-        {
-        }
+
     }
 }

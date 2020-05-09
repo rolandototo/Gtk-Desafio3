@@ -7,17 +7,6 @@
       <File FileName="Gtk-Desafio3/LogIn.cs" Line="11" Column="1" />
       <File FileName="Gtk-Desafio3/Recursos.cs" Line="11" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Gtk-Desafio3" expanded="True">
-            <Node name="Gtk-Desafio3" expanded="True">
-              <Node name="LogIn.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
