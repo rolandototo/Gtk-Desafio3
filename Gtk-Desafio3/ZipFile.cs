@@ -6,6 +6,7 @@ namespace GtkDesafio3
 {
     public class ZipFile
     {
+        Recursos rs = new Recursos();
         public void Zip()
         {
            
