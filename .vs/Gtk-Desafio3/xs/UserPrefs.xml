@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{31B67E25-E868-4781-A091-7016D04CD6E6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/MainWindow.cs">
+    <Files>
+      <File FileName="Gtk-Desafio3/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="Gtk-Desafio3/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Gtk-Desafio3" expanded="True">
+            <Node name="Gtk-Desafio3" expanded="True">
+              <Node name="MainWindow.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.Gtk-Desafio3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
