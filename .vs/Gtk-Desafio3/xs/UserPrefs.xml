@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{31B67E25-E868-4781-A091-7016D04CD6E6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/ZipFile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/Calc.cs">
     <Files>
       <File FileName="Gtk-Desafio3/MainWindow.cs" Line="28" Column="73" />
       <File FileName="Gtk-Desafio3/LogIn.cs" Line="21" Column="1" />
@@ -8,13 +8,15 @@
       <File FileName="Gtk-Desafio3/SendAlertEmail.cs" Line="6" Column="32" />
       <File FileName="Gtk-Desafio3/MainProgram.cs" Line="18" Column="1" />
       <File FileName="Gtk-Desafio3/ZipFile.cs" Line="12" Column="12" />
+      <File FileName="Gtk-Desafio3/packages.config" Line="1" Column="1" />
+      <File FileName="Gtk-Desafio3/Calc.cs" Line="6" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Gtk-Desafio3" expanded="True">
             <Node name="Gtk-Desafio3" expanded="True">
-              <Node name="ZipFile.cs" selected="True" />
+              <Node name="Calc.cs" selected="True" />
             </Node>
           </Node>
         </State>

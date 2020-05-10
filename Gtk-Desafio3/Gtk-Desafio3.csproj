@@ -73,6 +73,7 @@
     <Compile Include="MainProgram.cs" />
     <Compile Include="gtk-gui\GtkDesafio3.MainProgram.cs" />
     <Compile Include="SendAlertEmail.cs" />
+    <Compile Include="Calc.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -5,7 +5,6 @@
   </configuration>
   <import>
     <widget-library name="../bin/Debug/Gtk-Desafio3.exe" internal="true" />
-    <widget-library name="../../../../../../usr/lib/monodevelop/AddIns/MonoDevelop.GtkCore/libstetic.dll" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="279 136">
     <property name="MemberName" />
