@@ -324,7 +324,7 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="Gtk.Entry" id="entry6">
+                      <widget class="Gtk.Entry" id="CODE_ENTRY">
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="IsEditable">True</property>
@@ -360,7 +360,7 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="Gtk.Entry" id="entry7">
+                      <widget class="Gtk.Entry" id="NAME_ENTRY">
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="IsEditable">True</property>
@@ -396,7 +396,7 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="Gtk.Entry" id="entry8">
+                      <widget class="Gtk.Entry" id="HORA_ENTRY">
                         <property name="MemberName" />
                         <property name="CanFocus">True</property>
                         <property name="IsEditable">True</property>
