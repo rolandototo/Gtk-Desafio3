@@ -24,7 +24,7 @@ namespace GtkDesafio3
                 return addr[addr.Length - 1].ToString();
 
             }
-            MailMessage mess = new MailMessage(Emailorigen, Emaildestino, "Se Ha Destectado Una Amenaza", "<p>Intento de sospechoso de ingreso en el programa el dia " + DateTime.Today.ToString("d") + " a las " + DateTime.Now.ToString("hh:mm:ss") + " con la ip: " + GetIP() + "<p>");
+            MailMessage mess = new MailMessage(Emailorigen, Emaildestino, "Se Ha Detectado Una Amenaza", "<p>Intento de sospechoso de ingreso en el programa el dia " + DateTime.Today.ToString("d") + " a las " + DateTime.Now.ToString("hh:mm:ss") + " con la ip: " + GetIP() + "<p>");
 
             mess.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("smtp.gmail.com");
