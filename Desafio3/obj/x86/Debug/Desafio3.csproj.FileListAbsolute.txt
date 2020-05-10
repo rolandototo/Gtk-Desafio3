@@ -1,0 +1,8 @@
+/home/rolando/Projects/Desafio3/Desafio3/bin/Debug/Desafio3.exe
+/home/rolando/Projects/Desafio3/Desafio3/bin/Debug/Desafio3.pdb
+/home/rolando/Projects/Desafio3/Desafio3/obj/x86/Debug/Desafio3.csprojAssemblyReference.cache
+/home/rolando/Projects/Desafio3/Desafio3/obj/x86/Debug/Desafio3.exe
+/home/rolando/Projects/Desafio3/Desafio3/obj/x86/Debug/Desafio3.pdb
+/home/rolando/Projects/Desafio3/Desafio3/bin/Debug/Newtonsoft.Json.dll
+/home/rolando/Projects/Desafio3/Desafio3/bin/Debug/Newtonsoft.Json.xml
+/home/rolando/Projects/Desafio3/Desafio3/obj/x86/Debug/Desafio3.csproj.CopyComplete
