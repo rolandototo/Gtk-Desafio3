@@ -1,7 +1,5 @@
 ﻿using System;
 using Gtk;
-using System.Security;
-using static System.Console;
 using GtkDesafio3;
 
 public partial class MainWindow : Gtk.Window
@@ -12,7 +10,7 @@ public partial class MainWindow : Gtk.Window
     int ContSendEmail = 1;
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
-        Build();
+        this.Build();
 
     }
 

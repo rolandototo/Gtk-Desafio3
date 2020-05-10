@@ -32,19 +32,19 @@ namespace GtkDesafio3
 
 		private global::Gtk.Label label9;
 
-		private global::Gtk.Entry entry6;
+		private global::Gtk.Entry CODE_ENTRY;
 
 		private global::Gtk.HBox hbox10;
 
 		private global::Gtk.Label label10;
 
-		private global::Gtk.Entry entry7;
+		private global::Gtk.Entry NAME_ENTRY;
 
 		private global::Gtk.HBox hbox11;
 
 		private global::Gtk.Label label11;
 
-		private global::Gtk.Entry entry8;
+		private global::Gtk.Entry HORA_ENTRY;
 
 		private global::Gtk.VBox vbox9;
 
@@ -149,13 +149,13 @@ namespace GtkDesafio3
 			w7.Expand = false;
 			w7.Fill = false;
 			// Container child hbox9.Gtk.Box+BoxChild
-			this.entry6 = new global::Gtk.Entry();
-			this.entry6.CanFocus = true;
-			this.entry6.Name = "entry6";
-			this.entry6.IsEditable = true;
-			this.entry6.InvisibleChar = '•';
-			this.hbox9.Add(this.entry6);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.entry6]));
+			this.CODE_ENTRY = new global::Gtk.Entry();
+			this.CODE_ENTRY.CanFocus = true;
+			this.CODE_ENTRY.Name = "CODE_ENTRY";
+			this.CODE_ENTRY.IsEditable = true;
+			this.CODE_ENTRY.InvisibleChar = '•';
+			this.hbox9.Add(this.CODE_ENTRY);
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.hbox9[this.CODE_ENTRY]));
 			w8.Position = 1;
 			this.vbox10.Add(this.hbox9);
 			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox9]));
@@ -176,13 +176,13 @@ namespace GtkDesafio3
 			w10.Expand = false;
 			w10.Fill = false;
 			// Container child hbox10.Gtk.Box+BoxChild
-			this.entry7 = new global::Gtk.Entry();
-			this.entry7.CanFocus = true;
-			this.entry7.Name = "entry7";
-			this.entry7.IsEditable = true;
-			this.entry7.InvisibleChar = '•';
-			this.hbox10.Add(this.entry7);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.entry7]));
+			this.NAME_ENTRY = new global::Gtk.Entry();
+			this.NAME_ENTRY.CanFocus = true;
+			this.NAME_ENTRY.Name = "NAME_ENTRY";
+			this.NAME_ENTRY.IsEditable = true;
+			this.NAME_ENTRY.InvisibleChar = '•';
+			this.hbox10.Add(this.NAME_ENTRY);
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox10[this.NAME_ENTRY]));
 			w11.Position = 1;
 			this.vbox10.Add(this.hbox10);
 			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox10]));
@@ -203,13 +203,13 @@ namespace GtkDesafio3
 			w13.Expand = false;
 			w13.Fill = false;
 			// Container child hbox11.Gtk.Box+BoxChild
-			this.entry8 = new global::Gtk.Entry();
-			this.entry8.CanFocus = true;
-			this.entry8.Name = "entry8";
-			this.entry8.IsEditable = true;
-			this.entry8.InvisibleChar = '•';
-			this.hbox11.Add(this.entry8);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.entry8]));
+			this.HORA_ENTRY = new global::Gtk.Entry();
+			this.HORA_ENTRY.CanFocus = true;
+			this.HORA_ENTRY.Name = "HORA_ENTRY";
+			this.HORA_ENTRY.IsEditable = true;
+			this.HORA_ENTRY.InvisibleChar = '•';
+			this.hbox11.Add(this.HORA_ENTRY);
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox11[this.HORA_ENTRY]));
 			w14.Position = 1;
 			this.vbox10.Add(this.hbox11);
 			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox11]));

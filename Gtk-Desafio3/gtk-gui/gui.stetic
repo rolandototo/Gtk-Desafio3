@@ -239,7 +239,7 @@
           <widget class="Gtk.Toolbar" id="toolbar4">
             <property name="MemberName" />
             <property name="ShowArrow">False</property>
-            <node name="__gtksharp_198_Stetic_Editor_ActionToolbar" type="Toolbar">
+            <node name="toolbar4" type="Toolbar">
               <node type="Toolitem" action="saveAction" />
               <node type="Toolitem" action="printAction" />
               <node type="Toolitem" action="dialogInfoAction" />
@@ -454,7 +454,6 @@
                     <property name="Type">TextOnly</property>
                     <property name="Label" translatable="yes">Operar y guardar</property>
                     <property name="UseUnderline">True</property>
-                    <signal name="Clicked" handler="OnButton3Clicked" />
                   </widget>
                   <packing>
                     <property name="PackType">End</property>
