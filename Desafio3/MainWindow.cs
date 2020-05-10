@@ -40,6 +40,7 @@ public partial class MainWindow : Gtk.Window
             md.Destroy();
 
             ContSendEmail++;
+            Show();
         }
 
 

@@ -9,44 +9,47 @@ namespace Desafio3
         // Create a model that will hold two strings - Artist Name and Song Title
         Gtk.ListStore DATA_LIST_EMPLE = new Gtk.ListStore(typeof(string), typeof(string), typeof(int), typeof(double), typeof(double), typeof(double), typeof(double), typeof(double));
 
+
+        TreeViewColumn CodeColumn, NomColumn, HoraColumn, AFPCOL, IssCol, RentCol, SalaLiqcol, SalaNetCol;
+        CellRendererText CodeCell, NomCell, HoraCell, AFPCell, IssCell, RentCell, SalaLiqcell, SalaNetCell;
+
         public FuncionProgram() :
                 base(Gtk.WindowType.Toplevel)
         {
 
             this.Build();
+            CodeColumn = new TreeViewColumn { Title = "Codigo" };
+            CodeCell = new CellRendererText();
+            CodeColumn.PackStart(CodeCell, true);
 
-            TreeViewColumn CodeColumn = new TreeViewColumn
-            {
-                Title = "Codigo"
-            };
-            TreeViewColumn NomColumn = new TreeViewColumn
-            {
-                Title = "Nombre"
-            };
-            TreeViewColumn HoraColumn = new TreeViewColumn
-            {
-                Title = "Horas"
-            };
-            TreeViewColumn AFPCOL = new TreeViewColumn
-            {
-                Title = "AFP"
-            };
-            TreeViewColumn IssCol = new TreeViewColumn
-            {
-                Title = "ISSS"
-            };
-            TreeViewColumn RentCol = new TreeViewColumn
-            {
-                Title = "Renta"
-            };
-            TreeViewColumn SalaLiqcol = new TreeViewColumn
-            {
-                Title = "Sal.Liqui"
-            };
-            TreeViewColumn SalaNetCol = new TreeViewColumn
-            {
-                Title = "Sal.Neto"
-            };
+            NomColumn = new TreeViewColumn { Title = "Nombre" };
+            NomCell = new CellRendererText();
+            NomColumn.PackStart(NomCell, true);
+
+            HoraColumn = new TreeViewColumn { Title = "Horas" };
+            HoraCell = new CellRendererText();
+            HoraColumn.PackStart(HoraCell, true);
+
+            AFPCOL = new TreeViewColumn { Title = "AFP" };
+            AFPCell = new CellRendererText();
+            AFPCOL.PackStart(AFPCell, true);
+
+            IssCol = new TreeViewColumn { Title = "ISSS" };
+            IssCell = new CellRendererText();
+            IssCol.PackStart(IssCell, true);
+
+            RentCol = new TreeViewColumn { Title = "Renta" };
+            RentCell = new CellRendererText();
+            RentCol.PackStart(RentCell, true);
+
+            SalaLiqcol = new TreeViewColumn { Title = "Sal.Liqui" };
+            SalaLiqcell = new CellRendererText();
+            SalaLiqcol.PackStart(SalaLiqcell, true);
+
+            SalaNetCol = new TreeViewColumn { Title = "Sal.Neto" };
+            SalaNetCell = new CellRendererText();
+            SalaNetCol.PackStart(SalaNetCell, true);
+
             // Add the columns to the TreeView
             treeview2.AppendColumn(CodeColumn);
             treeview2.AppendColumn(NomColumn);
@@ -56,16 +59,26 @@ namespace Desafio3
             treeview2.AppendColumn(RentCol);
             treeview2.AppendColumn(SalaLiqcol);
             treeview2.AppendColumn(SalaNetCol);
-            // Assign the model to the TreeView
-            treeview2.Model = DATA_LIST_EMPLE;
 
+            CodeColumn.AddAttribute(CodeCell, "text", 0);
+            NomColumn.AddAttribute(NomCell, "text", 1);
+            HoraColumn.AddAttribute(HoraCell, "text", 2);
+            AFPCOL.AddAttribute(AFPCell, "text", 3);
+            IssCol.AddAttribute(IssCell, "text", 4);
+            RentCol.AddAttribute(RentCell, "text", 5);
+            SalaLiqcol.AddAttribute(SalaLiqcell, "text", 6);
+            SalaNetCol.AddAttribute(SalaNetCell, "text", 7);
+
+            // Assign the model to the TreeView
+
+            treeview2.Model = DATA_LIST_EMPLE;
         }
 
         protected void OnButton2Clicked(object sender, System.EventArgs e)
         {
             int Datahora = Val();
 
-            var DATA_OUT_CALC = Cl.Empresa(Nom_Entry.Text, Code_Entry.Text,Datahora );
+            var DATA_OUT_CALC = Cl.Empresa(Nom_Entry.Text, Code_Entry.Text, Datahora);
 
             foreach (var DT_IN in DATA_OUT_CALC)
             {
@@ -77,6 +90,8 @@ namespace Desafio3
                 {
                     DATA_LIST_EMPLE.AppendValues(DT_IN.CODE_EMPLE1, DT_IN.NOM_EMPLE1, DT_IN.HORA_EMPLE1, DT_IN.AFP1, DT_IN.ISS1, DT_IN.RENTA1, DT_IN.SAL_LIQUIDO1, DT_IN.SAL_NETO1);
 
+
+                    ShowAll();
                 }
             }
 
@@ -116,8 +131,13 @@ namespace Desafio3
                 }
             }
 
-            while (!opval&&!opdata);
+            while (!opval && !opdata);
             return opcion;
+        }
+
+        protected void OnSaveActionActivated(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

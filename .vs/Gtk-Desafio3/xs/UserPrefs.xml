@@ -1,25 +1,14 @@
 ﻿<Properties StartupConfiguration="{31B67E25-E868-4781-A091-7016D04CD6E6}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/ZipFile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Gtk-Desafio3/MainProgram.cs">
     <Files>
-      <File FileName="Gtk-Desafio3/MainWindow.cs" Line="28" Column="73" />
-      <File FileName="Gtk-Desafio3/LogIn.cs" Line="21" Column="1" />
-      <File FileName="Gtk-Desafio3/Program.cs" Line="4" Column="5" />
-      <File FileName="Gtk-Desafio3/Json.cs" Line="27" Column="45" />
-      <File FileName="Gtk-Desafio3/SendAlertEmail.cs" Line="6" Column="32" />
-      <File FileName="Gtk-Desafio3/MainProgram.cs" Line="18" Column="1" />
-      <File FileName="Gtk-Desafio3/ZipFile.cs" Line="12" Column="12" />
+      <File FileName="Gtk-Desafio3/LogIn.cs" Line="43" Column="6" />
+      <File FileName="Gtk-Desafio3/MainProgram.cs" Line="17" Column="10" />
+      <File FileName="Gtk-Desafio3/Json.cs" Line="1" Column="1" />
+      <File FileName="Gtk-Desafio3/Program.cs" Line="10" Column="1" />
+      <File FileName="Gtk-Desafio3/Recursos.cs" Line="27" Column="1" />
+      <File FileName="Gtk-Desafio3/MainWindow.cs" Line="27" Column="1" />
+      <File FileName="Gtk-Desafio3/SendAlertEmail.cs" Line="7" Column="6" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Gtk-Desafio3" expanded="True">
-            <Node name="Gtk-Desafio3" expanded="True">
-              <Node name="ZipFile.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

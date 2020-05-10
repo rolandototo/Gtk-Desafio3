@@ -37,11 +37,11 @@ namespace Desafio3
             }
             if (HT > 0)
             {
-                SalLog = HT;
+                SalLog = Math.Round( HT,2);
                 ContDes = 0;
-                AFPC = HT * afp; ISSC = HT * isss; RENTC = HT * renta;
-                ContDes = AFPC + ISSC + RENTC;
-                SalNet = SalLog - ContDes;
+                AFPC = Math.Round(HT * afp,2); ISSC = Math.Round(HT * isss,2); RENTC = Math.Round(HT * renta,2);
+                ContDes = Math.Round(AFPC + ISSC + RENTC,2);
+                SalNet = Math.Round(SalLog - ContDes,2);
 
                 var datos = File.ReadAllText(ruta);
                 var DATA_DESE_JS = JsonConvert.DeserializeObject<DATA_TEMP>(datos);

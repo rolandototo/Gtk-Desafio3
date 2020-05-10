@@ -189,17 +189,33 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="Desafio3.FuncionProgram" design-size="560 422">
+  <widget class="Gtk.Window" id="Desafio3.FuncionProgram" design-size="681 542">
     <action-group name="Default">
       <action id="saveAction">
         <property name="Type">Action</property>
         <property name="Label" translatable="yes" />
         <property name="StockId">gtk-save</property>
+        <signal name="Activated" handler="OnSaveActionActivated" />
       </action>
       <action id="dialogInfoAction">
         <property name="Type">Action</property>
         <property name="Label" translatable="yes" />
         <property name="StockId">gtk-dialog-info</property>
+      </action>
+      <action id="sortAscendingAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">gtk-sort-ascending</property>
+      </action>
+      <action id="sortDescendingAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">gtk-sort-descending</property>
+      </action>
+      <action id="dndAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">gtk-dnd</property>
       </action>
     </action-group>
     <property name="MemberName" />
@@ -217,6 +233,9 @@
             <node name="__gtksharp_173_Stetic_Editor_ActionToolbar" type="Toolbar">
               <node type="Toolitem" action="saveAction" />
               <node type="Toolitem" action="dialogInfoAction" />
+              <node type="Toolitem" action="sortAscendingAction" />
+              <node type="Toolitem" action="sortDescendingAction" />
+              <node type="Toolitem" action="dndAction" />
             </node>
           </widget>
           <packing>

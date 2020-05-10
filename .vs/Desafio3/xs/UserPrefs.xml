@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{6AC79334-F951-4BA4-A6F7-08B7BA79B511}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Desafio3/FuncionProgram.cs">
+    <Files>
+      <File FileName="Desafio3/FuncionProgram.cs" Line="128" Column="18" />
+      <File FileName="Desafio3/Calc.cs" Line="18" Column="10" />
+      <File FileName="Desafio3/Login.cs" Line="44" Column="25" />
+      <File FileName="Desafio3/MainWindow.cs" Line="2" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Desafio3" expanded="True">
+            <Node name="Desafio3" expanded="True">
+              <Node name="FuncionProgram.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Desafio3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -10,6 +10,12 @@ namespace Desafio3
 
 		private global::Gtk.Action dialogInfoAction;
 
+		private global::Gtk.Action sortAscendingAction;
+
+		private global::Gtk.Action sortDescendingAction;
+
+		private global::Gtk.Action dndAction;
+
 		private global::Gtk.VBox vbox3;
 
 		private global::Gtk.Toolbar toolbar1;
@@ -52,6 +58,12 @@ namespace Desafio3
 			w1.Add(this.saveAction, null);
 			this.dialogInfoAction = new global::Gtk.Action("dialogInfoAction", null, null, "gtk-dialog-info");
 			w1.Add(this.dialogInfoAction, null);
+			this.sortAscendingAction = new global::Gtk.Action("sortAscendingAction", null, null, "gtk-sort-ascending");
+			w1.Add(this.sortAscendingAction, null);
+			this.sortDescendingAction = new global::Gtk.Action("sortDescendingAction", null, null, "gtk-sort-descending");
+			w1.Add(this.sortDescendingAction, null);
+			this.dndAction = new global::Gtk.Action("dndAction", null, null, "gtk-dnd");
+			w1.Add(this.dndAction, null);
 			this.UIManager.InsertActionGroup(w1, 0);
 			this.AddAccelGroup(this.UIManager.AccelGroup);
 			this.Name = "Desafio3.FuncionProgram";
@@ -62,8 +74,7 @@ namespace Desafio3
 			this.vbox3.Name = "vbox3";
 			this.vbox3.Spacing = 6;
 			// Container child vbox3.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString("<ui><toolbar name=\'toolbar1\'><toolitem name=\'saveAction\' action=\'saveAction\'/><to" +
-					"olitem name=\'dialogInfoAction\' action=\'dialogInfoAction\'/></toolbar></ui>");
+			this.UIManager.AddUiFromString(@"<ui><toolbar name='toolbar1'><toolitem name='saveAction' action='saveAction'/><toolitem name='dialogInfoAction' action='dialogInfoAction'/><toolitem name='sortAscendingAction' action='sortAscendingAction'/><toolitem name='sortDescendingAction' action='sortDescendingAction'/><toolitem name='dndAction' action='dndAction'/></toolbar></ui>");
 			this.toolbar1 = ((global::Gtk.Toolbar)(this.UIManager.GetWidget("/toolbar1")));
 			this.toolbar1.Name = "toolbar1";
 			this.toolbar1.ShowArrow = false;
@@ -219,8 +230,8 @@ namespace Desafio3
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 560;
-			this.DefaultHeight = 422;
+			this.DefaultWidth = 681;
+			this.DefaultHeight = 542;
 			this.Show();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 			this.button2.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
