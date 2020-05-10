@@ -13,5 +13,9 @@ namespace GtkDesafio3
             Application.Quit();
             a.RetVal = true;
         }
+
+        protected void OnButton3Clicked(object sender, EventArgs e)
+        {
+        }
     }
 }

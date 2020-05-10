@@ -24,7 +24,7 @@ namespace GtkDesafio3
         }
 
         public class Log
-        {
+        {s
 
             public string User { get; set; }
 
