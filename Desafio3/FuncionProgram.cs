@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using Gtk;
 
 namespace Desafio3
@@ -6,6 +8,9 @@ namespace Desafio3
     public partial class FuncionProgram : Gtk.Window
     {
         Calc Cl = new Calc();
+        Json js = new Json();
+        DateTime fecha = DateTime.Now;
+        Comprecion Cp = new Comprecion();
         // Create a model that will hold two strings - Artist Name and Song Title
         Gtk.ListStore DATA_LIST_EMPLE = new Gtk.ListStore(typeof(string), typeof(string), typeof(int), typeof(double), typeof(double), typeof(double), typeof(double), typeof(double));
 
@@ -137,7 +142,40 @@ namespace Desafio3
 
         protected void OnSaveActionActivated(object sender, System.EventArgs e)
         {
+            var DATA_JSON = js.DesTemp();
+            string ruta = js.SelfDir + "/../CalculoEmple/calculoSalario_" + fecha.ToString("dd-MM-yyyy_HH-mm-ss") + ".txt";
+            using (StreamWriter sw = new StreamWriter(ruta, true))
+            {
+                foreach (var DT in DATA_JSON.DATA)
+                {
+                    sw.WriteLine("-------------------------------\n");
+                    sw.WriteLine("Código empleado: "+DT.CODE_EMPLE);
+                    sw.WriteLine("Nombre Empleado: " + DT.NOM_EMPLE);
+                    sw.WriteLine("Horas = " + DT.HORA_EMPLE);
+                    sw.WriteLine("ISSS = $" + DT.ISS);
+                    sw.WriteLine("AFP = $" + DT.AFP);
+                    sw.WriteLine("RENTA = $" + DT.RENTA);
+                    sw.WriteLine("SUELDO L = $" + DT.SAL_LIQUIDO);
+                    sw.WriteLine("SUELDO NETO = $" + DT.SAL_NETO+"\n");
+                    sw.WriteLine("-------------------------------");
+
+                }
+
+            }
+            Cp.Zip();
 
         }
+
+        protected void OnSortDescendingActionActivated(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void OnSortAscendingActionActivated(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

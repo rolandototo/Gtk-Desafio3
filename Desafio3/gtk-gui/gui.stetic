@@ -206,11 +206,13 @@
         <property name="Type">Action</property>
         <property name="Label" translatable="yes" />
         <property name="StockId">gtk-sort-ascending</property>
+        <signal name="Activated" handler="OnSortAscendingActionActivated" />
       </action>
       <action id="sortDescendingAction">
         <property name="Type">Action</property>
         <property name="Label" translatable="yes" />
         <property name="StockId">gtk-sort-descending</property>
+        <signal name="Activated" handler="OnSortDescendingActionActivated" />
       </action>
       <action id="dndAction">
         <property name="Type">Action</property>

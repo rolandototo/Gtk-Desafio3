@@ -234,6 +234,9 @@ namespace Desafio3
 			this.DefaultHeight = 542;
 			this.Show();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
+			this.saveAction.Activated += new global::System.EventHandler(this.OnSaveActionActivated);
+			this.sortAscendingAction.Activated += new global::System.EventHandler(this.OnSortAscendingActionActivated);
+			this.sortDescendingAction.Activated += new global::System.EventHandler(this.OnSortDescendingActionActivated);
 			this.button2.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
 		}
 	}
