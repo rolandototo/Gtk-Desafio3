@@ -44,6 +44,12 @@ namespace Desafio3
 
 		private global::Gtk.Entry Nom_Entry;
 
+		private global::Gtk.VBox vbox1;
+
+		private global::Gtk.Button button3;
+
+		private global::Gtk.Button button1;
+
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 
 		private global::Gtk.TreeView treeview2;
@@ -74,7 +80,8 @@ namespace Desafio3
 			this.vbox3.Name = "vbox3";
 			this.vbox3.Spacing = 6;
 			// Container child vbox3.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString(@"<ui><toolbar name='toolbar1'><toolitem name='saveAction' action='saveAction'/><toolitem name='dialogInfoAction' action='dialogInfoAction'/><toolitem name='sortAscendingAction' action='sortAscendingAction'/><toolitem name='sortDescendingAction' action='sortDescendingAction'/><toolitem name='dndAction' action='dndAction'/></toolbar></ui>");
+			this.UIManager.AddUiFromString("<ui><toolbar name=\'toolbar1\'><toolitem name=\'saveAction\' action=\'saveAction\'/></t" +
+					"oolbar></ui>");
 			this.toolbar1 = ((global::Gtk.Toolbar)(this.UIManager.GetWidget("/toolbar1")));
 			this.toolbar1.Name = "toolbar1";
 			this.toolbar1.ShowArrow = false;
@@ -208,11 +215,45 @@ namespace Desafio3
 			w13.RightAttach = ((uint)(2));
 			w13.XOptions = ((global::Gtk.AttachOptions)(7));
 			w13.YOptions = ((global::Gtk.AttachOptions)(4));
-			this.vbox3.Add(this.table2);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.table2]));
-			w14.Position = 1;
+			// Container child table2.Gtk.Table+TableChild
+			this.vbox1 = new global::Gtk.VBox();
+			this.vbox1.Name = "vbox1";
+			this.vbox1.Spacing = 6;
+			// Container child vbox1.Gtk.Box+BoxChild
+			this.button3 = new global::Gtk.Button();
+			this.button3.CanFocus = true;
+			this.button3.Name = "button3";
+			this.button3.UseUnderline = true;
+			this.button3.Label = global::Mono.Unix.Catalog.GetString("Mostrar Max/Min");
+			this.vbox1.Add(this.button3);
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.button3]));
+			w14.Position = 0;
 			w14.Expand = false;
 			w14.Fill = false;
+			// Container child vbox1.Gtk.Box+BoxChild
+			this.button1 = new global::Gtk.Button();
+			this.button1.CanFocus = true;
+			this.button1.Name = "button1";
+			this.button1.UseUnderline = true;
+			this.button1.Label = global::Mono.Unix.Catalog.GetString("Mostrar Sal>300");
+			this.vbox1.Add(this.button1);
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.button1]));
+			w15.Position = 1;
+			w15.Expand = false;
+			w15.Fill = false;
+			this.table2.Add(this.vbox1);
+			global::Gtk.Table.TableChild w16 = ((global::Gtk.Table.TableChild)(this.table2[this.vbox1]));
+			w16.TopAttach = ((uint)(1));
+			w16.BottomAttach = ((uint)(2));
+			w16.LeftAttach = ((uint)(2));
+			w16.RightAttach = ((uint)(3));
+			w16.XOptions = ((global::Gtk.AttachOptions)(4));
+			w16.YOptions = ((global::Gtk.AttachOptions)(4));
+			this.vbox3.Add(this.table2);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.table2]));
+			w17.Position = 1;
+			w17.Expand = false;
+			w17.Fill = false;
 			// Container child vbox3.Gtk.Box+BoxChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow();
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
@@ -223,8 +264,8 @@ namespace Desafio3
 			this.treeview2.Name = "treeview2";
 			this.GtkScrolledWindow.Add(this.treeview2);
 			this.vbox3.Add(this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.GtkScrolledWindow]));
-			w16.Position = 2;
+			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.GtkScrolledWindow]));
+			w19.Position = 2;
 			this.Add(this.vbox3);
 			if ((this.Child != null))
 			{
@@ -235,8 +276,8 @@ namespace Desafio3
 			this.Show();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler(this.OnDeleteEvent);
 			this.saveAction.Activated += new global::System.EventHandler(this.OnSaveActionActivated);
-			this.sortAscendingAction.Activated += new global::System.EventHandler(this.OnSortAscendingActionActivated);
-			this.sortDescendingAction.Activated += new global::System.EventHandler(this.OnSortDescendingActionActivated);
+			this.button3.Clicked += new global::System.EventHandler(this.OnButton3Clicked);
+			this.button1.Clicked += new global::System.EventHandler(this.OnButton1Clicked);
 			this.button2.Clicked += new global::System.EventHandler(this.OnButton2Clicked);
 		}
 	}

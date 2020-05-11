@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.IO.Compression;
-
 namespace Desafio3
 {
     public class Comprecion

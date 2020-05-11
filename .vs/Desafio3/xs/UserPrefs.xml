@@ -1,11 +1,23 @@
 ﻿<Properties StartupConfiguration="{6AC79334-F951-4BA4-A6F7-08B7BA79B511}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Desafio3/FuncionProgram.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Desafio3/Comprecion.cs">
     <Files>
-      <File FileName="Desafio3/Calc.cs" Line="20" Column="27" />
       <File FileName="Desafio3/Login.cs" Line="44" Column="1" />
-      <File FileName="Desafio3/MainWindow.cs" Line="2" Column="16" />
-      <File FileName="Desafio3/FuncionProgram.cs" Line="1" Column="1" />
+      <File FileName="Desafio3/FuncionProgram.cs" Line="212" Column="144" />
+      <File FileName="Desafio3/Calc.cs" Line="75" Column="9" />
+      <File FileName="Desafio3/Comprecion.cs" Line="22" Column="6" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Desafio3" expanded="True">
+            <Node name="Desafio3" expanded="True">
+              <Node name="UserInterface" expanded="True" />
+              <Node name="Comprecion.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Desafio3 PreferredExecutionTarget="MonoDevelop.Default" />

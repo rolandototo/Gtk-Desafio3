@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Gtk;
 
 namespace Desafio3
@@ -11,6 +12,17 @@ namespace Desafio3
         Json js = new Json();
         DateTime fecha = DateTime.Now;
         Comprecion Cp = new Comprecion();
+        string maxname;
+        string maxsal;
+        string minnamel;
+        string minsal;
+        List<TemList> TEMP = new List<TemList>();
+
+        public class TemList
+        {
+            public string NOM_TM { get; set; }
+            public double SAL_TM { get; set; }
+        }
         // Create a model that will hold two strings - Artist Name and Song Title
         Gtk.ListStore DATA_LIST_EMPLE = new Gtk.ListStore(typeof(string), typeof(string), typeof(int), typeof(double), typeof(double), typeof(double), typeof(double), typeof(double));
 
@@ -95,7 +107,7 @@ namespace Desafio3
                 {
                     DATA_LIST_EMPLE.AppendValues(DT_IN.CODE_EMPLE1, DT_IN.NOM_EMPLE1, DT_IN.HORA_EMPLE1, DT_IN.AFP1, DT_IN.ISS1, DT_IN.RENTA1, DT_IN.SAL_LIQUIDO1, DT_IN.SAL_NETO1);
 
-
+                    TEMP.Add(new TemList { NOM_TM = DT_IN.NOM_EMPLE1, SAL_TM = DT_IN.SAL_NETO1 });
                     ShowAll();
                 }
             }
@@ -149,33 +161,79 @@ namespace Desafio3
                 foreach (var DT in DATA_JSON.DATA)
                 {
                     sw.WriteLine("-------------------------------\n");
-                    sw.WriteLine("Código empleado: "+DT.CODE_EMPLE);
+                    sw.WriteLine("Código empleado: " + DT.CODE_EMPLE);
                     sw.WriteLine("Nombre Empleado: " + DT.NOM_EMPLE);
                     sw.WriteLine("Horas = " + DT.HORA_EMPLE);
                     sw.WriteLine("ISSS = $" + DT.ISS);
                     sw.WriteLine("AFP = $" + DT.AFP);
                     sw.WriteLine("RENTA = $" + DT.RENTA);
                     sw.WriteLine("SUELDO L = $" + DT.SAL_LIQUIDO);
-                    sw.WriteLine("SUELDO NETO = $" + DT.SAL_NETO+"\n");
-                    sw.WriteLine("-------------------------------");
+                    sw.WriteLine("SUELDO NETO = $" + DT.SAL_NETO + "\n");
+
 
                 }
 
             }
             Cp.Zip();
-
         }
 
-        protected void OnSortDescendingActionActivated(object sender, EventArgs e)
+        protected void OnButton3Clicked(object sender, System.EventArgs e)
         {
+            List<double> Saltemp = new List<double>();
+            foreach (var IN_TEMP in TEMP)
+            {
+                Saltemp.Add(IN_TEMP.SAL_TM);
+            }
+            double max = Saltemp.Max();
+            double min = Saltemp.Min();
+            string[] dotomax = new string[1];
 
+            string[] dotomin = new string[1];   
+           
+            foreach (var IN_TEMP in TEMP)
+            {
+                if (max == IN_TEMP.SAL_TM)
+                {
+                    maxname = IN_TEMP.NOM_TM;
+                    maxsal = IN_TEMP.SAL_TM.ToString();
+                }
+                if (min == IN_TEMP.SAL_TM)
+                {
+
+                    minnamel = IN_TEMP.NOM_TM;
+                    minsal = IN_TEMP.SAL_TM.ToString();
+                }
+
+            }
+            string p = "El empleado con el Salario mas alto es: " + maxname + " con $" + maxsal + "\nEl empleado con el Salario mas bajo es: " + minnamel + " con $" + minsal;
+
+            MessageDialog em = new MessageDialog(this, DialogFlags.DestroyWithParent, MessageType.Info, ButtonsType.Close,p) ;
+            em.Run();
+            em.Destroy();
         }
 
-        protected void OnSortAscendingActionActivated(object sender, EventArgs e)
+        protected void OnButton1Clicked(object sender, System.EventArgs e)
         {
+            List<TemList> Saltemp = new List<TemList>();
+            foreach (var IN_TEMP in TEMP)
+            {
+                if (IN_TEMP.SAL_TM > 300)
+                {
+                    Saltemp.Add(new TemList { NOM_TM = IN_TEMP.NOM_TM, SAL_TM = IN_TEMP.SAL_TM });
 
+                }
+            }
+            System.Text.StringBuilder builder = new System.Text.StringBuilder("Datos\n");
+            foreach (var IN_TEMP in Saltemp)
+            {
+                builder.Append("\t");
+                builder.Append(IN_TEMP.NOM_TM);
+                builder.Append(" Salario = $" + IN_TEMP.SAL_TM);
+            }
+
+            MessageDialog em = new MessageDialog(this, DialogFlags.DestroyWithParent, MessageType.Info, ButtonsType.Close, builder.ToString());
+            em.Run();
+            em.Destroy();
         }
-
-
     }
 }
