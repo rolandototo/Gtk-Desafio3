@@ -1,6 +1,6 @@
 # Gtk-Desafio3
 Uso de la interfas Gtk para multiplataforma
-Recomenddable solo ocupar rama master para ver el funcionamiento.
+*Recomenddable solo ocupar rama master para ver el funcionamiento.
 ***
 ## Integrantes:
 
