@@ -1,0 +1,22 @@
+-------------------------------
+
+Código empleado: test123
+Nombre Empleado: test
+Horas = 30
+ISSS = $15.36
+AFP = $20.12
+RENTA = $29.25
+SUELDO L = $292.5
+SUELDO NETO = $227.77
+
+-------------------------------
+
+Código empleado: test1234
+Nombre Empleado: test1
+Horas = 50
+ISSS = $25.59
+AFP = $33.54
+RENTA = $48.75
+SUELDO L = $487.5
+SUELDO NETO = $379.62
+
