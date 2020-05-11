@@ -1,6 +1,6 @@
 # Gtk-Desafio3
 Uso de la interfas Gtk para multiplataforma
-*Recomenddable solo ocupar rama master para ver el funcionamiento.
+
 ***
 ## Integrantes:
 
@@ -8,6 +8,8 @@ Uso de la interfas Gtk para multiplataforma
 * Josías Isaac Alvarenga Romero       AR200778
 ---
 ### En el proyecto usaremos: 
+
+*Recomenddable solo ocupar rama master para ver el funcionamiento. 
 
 * Gtk# 2.0 como interfas grafica
 * Json como manejo de datos
