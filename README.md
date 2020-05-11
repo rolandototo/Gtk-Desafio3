@@ -1,6 +1,6 @@
 # Gtk-Desafio3
 Uso de la interfas Gtk para multiplataforma
-
+* _Para informacion de uso leer **.pdf**_ 
 ***
 ## Integrantes:
 
